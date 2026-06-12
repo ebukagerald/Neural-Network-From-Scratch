@@ -1,3 +1,4 @@
+import numpy as np
 # _________________ADAM OPTIMIZER___________________1,134,34,56,90,1,9,8
                 
 class AdamOptimizer:
@@ -5,7 +6,8 @@ class AdamOptimizer:
     
     
     def adam_optimizer(self,adam_opt_dict):
-       
+    
+        grad = adam_opt_dict['grad']
         oldWeightMatrix = adam_opt_dict['oldWeightMatrix']
         ith = adam_opt_dict['ith']
         lastLayer_firstMoment = adam_opt_dict['lastLayer_firstMoment']
