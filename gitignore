@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Models (large files)
+*.pth
+*.pt
+
+# Data (too large for git)
+*.csv
+
+# Environment
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
