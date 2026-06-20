@@ -68,9 +68,7 @@ Epoch: 800 Loss: 0.006214383004197252
 Epoch: 900 Loss: 0.006306416134912575
 ```
 ## 📉 Loss Reduction Over Training
-```
-<img width="640" height="480" alt="my_plot" src="https://github.com/user-attachments/assets/5c7e1e34-0a8b-4729-87f9-ae582d17f0f7" />
-```
+![Loss Curve](image/my_plot.png)
 ## 🚀 Quick Start
 
 ```bash
