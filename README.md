@@ -1,4 +1,4 @@
-# 🧠 Custom Neural Network - House Price Prediction
+# 🧠 Neural Network From Scratch - House Price Prediction
 
 **Built entirely from scratch with NumPy** — no PyTorch, no TensorFlow, no deep learning frameworks.
 
@@ -21,18 +21,21 @@ This project implements a **regression neural network from scratch** to predict 
 
 | Metric | Result |
 |--------|--------|
-| **Training Loss Reduction** | 96% (0.1187 → 0.0046) |
+| **Training Loss Reduction** | 77% (0.040 → 0.0092) |
 | **Test Loss** | 0.0104 |
-| **Architecture** | 14 → 16 → 8 → 1 |
+| **R<sup>2</sup>** | 0.64824 |
+| **RMSE** | 0.0962 |
+| **MAE** | 0.0697|
+| **Architecture** | 14 → 8 → 4 → 1 |
 
 ---
 
 ## 🧠 Architecture
 Input (14 features)
 ↓
-Hidden Layer 1 (16 neurons, ReLU)
+Hidden Layer 1 (8 neurons, ReLU)
 ↓
-Hidden Layer 2 (8 neurons, ReLU)
+Hidden Layer 2 (4 neurons, ReLU)
 ↓
 Output Layer (1 neuron)
 
@@ -53,19 +56,25 @@ Output Layer (1 neuron)
 ## 📊 Loss Reduction
 
 ```
-Epoch 0:    0.1187
-Epoch 500:  0.0200
-Epoch 1000: 0.0080
-Epoch 1500: 0.0050
-Epoch 2000: 0.0046  ← 96% reduction!
+Epoch: 0 Loss: 0.0401005385931033
+Epoch: 100 Loss: 0.006917422878636654
+Epoch: 200 Loss: 0.006612264429746065
+Epoch: 300 Loss: 0.00698271926206127
+Epoch: 400 Loss: 0.00605431790100587
+Epoch: 500 Loss: 0.00809115911535003
+Epoch: 600 Loss: 0.006196774441791512
+Epoch: 700 Loss: 0.006395744105832059
+Epoch: 800 Loss: 0.006214383004197252
+Epoch: 900 Loss: 0.006306416134912575
 ```
-
+## 📉 Loss Reduction Over Training
+![Loss Curve](image/my_plot.png)
 ## 🚀 Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/ebukagerald/housing-custom-nn.git
-cd housing-custom-nn
+git clone https://github.com/ebukagerald/Neural-Network-From-Scratch.git
+cd Neural-Network-From-Scratch
 
 # Install dependencies
 pip install numpy pandas
@@ -74,38 +83,38 @@ pip install numpy pandas
 python train.py
 
 📁 Project Structure
-housing-custom-nn/
-├── model.py          # Neural network architecture
-├── train.py          # Training loop
-├── backprop.py       # Manual backpropagation
-├── adam.py           # Adam optimizer from scratch
-├── relu.py           # ReLU activation
-├── data/             # Dataset
-└── README.md
+    housing-custom-nn/
+    ├── model.py          # Neural network architecture
+    ├── train.py          # Training loop
+    ├── backprop.py       # Manual backpropagation
+    ├── adam.py           # Adam optimizer from scratch
+    ├── relu.py           # ReLU activation
+    ├── data/             # Dataset
+    └── README.md
 
 💡 Why This Matters
-Most ML engineers use frameworks like PyTorch or TensorFlow. I built the math behind them.
-
-This project demonstrates:
-
-Deep understanding of neural networks
-
-Mathematical foundations of deep learning
-
-Ability to implement complex algorithms from scratch
-
-Strong Python and NumPy skills
+    Most ML engineers use frameworks like PyTorch or TensorFlow. I built the math behind them.
+    
+    This project demonstrates:
+    
+    Deep understanding of neural networks
+    
+    Mathematical foundations of deep learning
+    
+    Ability to implement complex algorithms from scratch
+    
+    Strong Python and NumPy skills
 
 🛠️ Tech Stack
-Language: Python
-
-Libraries: NumPy, Pandas
-
-No frameworks: Everything is custom
+    Language: Python
+    
+    Libraries: NumPy, Pandas
+    
+    No frameworks: Everything is custom
 
 🔗 Links
-GitHub: github.com/ebukagerald/housing-custom-nn
-LinkedIn: linkedin.com/in/ebukagerald
-
-Built with ❤️ by Ebuka Gerald | Expert ML Engineer
+    GitHub: github.com/ebukagerald/housing-custom-nn
+    LinkedIn: linkedin.com/in/ebukagerald
+    
+    Built with ❤️ by Ebuka Gerald | Expert ML Engineer
 
