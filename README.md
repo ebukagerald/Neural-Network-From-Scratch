@@ -86,10 +86,11 @@ python train.py
     housing-custom-nn/
     ├── model.py          # Neural network architecture
     ├── train.py          # Training loop
-    ├── backprop.py       # Manual backpropagation
-    ├── adam.py           # Adam optimizer from scratch
-    ├── relu.py           # ReLU activation
-    ├── data/             # Dataset
+    ├── backward_propagation.py       # Manual backpropagation
+    ├── adam_optimizer.py           # Adam optimizer from scratch
+    ├── relu_activate.py           # ReLU activation
+    ├── data/   # Dataset
+    ├── Dataset_processing       #
     └── README.md
 
 💡 Why This Matters
